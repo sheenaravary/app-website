@@ -2,6 +2,7 @@ html {
 	padding: 0;
 	margin: 0;
 	font-family: Helvetica, sans-serif;
+	background-color: rgb(148,226,218);
 }
 
 body {
@@ -47,6 +48,10 @@ nav a:visited {
 	font-size: 1em;
 	font-weight:300;
 	text-decoration: none;
+}
+
+.phone img {
+	display: block;
 }
 	
 .text {
