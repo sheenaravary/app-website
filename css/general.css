@@ -77,6 +77,13 @@ nav a:visited {
   z-index: 1000;
 }
 	
+.text-video {
+	background-color: rgb(74,207,193);
+	overflow: hidden;
+}
+	
+	
+.video,
 .text {
 	width: 100%;
 	background-color: rgb(74,207,193);
@@ -84,6 +91,7 @@ nav a:visited {
 	padding-bottom: 5%;
 }
 
+.video img,
 .text p {
 	width: 80%;
 	display: block;
@@ -162,6 +170,10 @@ footer {
 
 @media only screen and (min-width: 62em) {
 	
+	
+		.carousel {
+			padding-bottom: 51%;
+		}
 		
 		.text p {
 			font-size: 1.5em;
@@ -185,11 +197,39 @@ footer {
 		text-align: right;
 	}
 	
+	.carousel {
+		padding-bottom: 43%;
+	}
+	
+	.carousel img {
+		width: 50%;
+	}
+	
+	.text-video {
+		width: 100%;
+	}
+	
+	.text {
+		width: 45%;
+		float: left;
+		overflow: hidden;
+	}
+	
+	.text p {
+		width: 80%;
+	}
+	
+	.video {
+		width: 40%;
+		float: right;
+	}
+	
 	footer {
 		padding-top: 1%;
 		padding-bottom: 1%;
 		font-size: 1em;
-	}
+		width: 100%;
+		}
 
 	
 }
