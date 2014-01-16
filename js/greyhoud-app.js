@@ -18,7 +18,7 @@ $('.next').on('click', function () {
   );
 
   $imgs.eq(current).animate({
-      left: $imgs.eq(current).width() * -1
+      left: $imgs.eq(current).width() * -4
     },
     250,
     function () {
