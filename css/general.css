@@ -53,16 +53,14 @@ nav a:visited {
 .carousel {
   overflow: hidden;
   position: relative;
-  padding-bottom: 87%;
+  padding-bottom: 51.58%;
 }
 
 .carousel img {
 	padding-top: 9%;
-	margin: auto;
-	padding: auto;
   position: absolute;
-  top: 0;
-  width: 100%;
+  width: 55%;
+	padding-left: 22.5%;
 }
 
 .slides [data-state="current"] {
@@ -165,22 +163,8 @@ footer {
 
 @media only screen and (min-width: 37em) {
 	
-	.carousel img {
-		width: 60%;
-	}
-	
-	.carousel {
-		padding-bottom: 56%;
-	}
-	
-	
 
 @media only screen and (min-width: 62em) {
-	
-	
-		.carousel {
-			padding-bottom: 55.5%;
-		}
 		
 		.text p {
 			font-size: 1.5em;
@@ -203,15 +187,7 @@ footer {
 		width: 30%;
 		text-align: right;
 	}
-	
-	.carousel {
-		padding-bottom: 48%;
-	}
-	
-	.carousel img {
-		width: 50%;
-	}
-	
+		
 	.text-video {
 		width: 100%;
 	}
