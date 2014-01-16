@@ -58,7 +58,8 @@ nav a:visited {
 
 .carousel img {
 	padding-top: 4%;
-	margin:0 auto;
+	margin: auto;
+	padding: auto;
   position: absolute;
   top: 0;
   width: 100%;
@@ -91,7 +92,14 @@ nav a:visited {
 	padding-bottom: 5%;
 }
 
-.video img,
+.video img {
+	width: 90%;
+	margin: auto;
+	padding: auto;
+}
+	
+
+
 .text p {
 	width: 80%;
 	display: block;
