@@ -50,8 +50,31 @@ nav a:visited {
 	text-decoration: none;
 }
 
-.phone img {
-	display: block;
+.carousel {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 80%;
+}
+
+.carousel img {
+	padding-top: 4%;
+	margin:0 auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slides [data-state="current"] {
+  z-index: 100;
+}
+
+.slides [data-state="incoming"] {
+  z-index: 101;
+}
+
+.carousel-buttons {
+  position: absolute;
+  z-index: 1000;
 }
 	
 .text {
@@ -73,18 +96,21 @@ nav a:visited {
 	text-align: center;
 }
 
-.button {
+.carousel-buttons {
+	position: absolute;
+	width: 20%;
+	padding-top: 1%;
+	padding-left: 43.5%;
+	display:block;
 	margin: auto;
 	padding: auto;
 }
 
-.btn {
-	margin: auto;
-	padding: auto;
-  display: inline-block;
-  *display: inline;
+.next {
+	bottom: 0;
   padding: 2% 6%;
-  font-size: 1em;
+	padding-bottom: 2%;
+  font-size: .8em;
 	text-decoration: none;
 	color: rgb(121,127,125);
   text-align: center;
@@ -118,28 +144,24 @@ footer {
 	font-size: .70em;
 	font-weight: 100;
 	text-align: center;
+	clear: all;
 }
+
 
 @media only screen and (min-width: 37em) {
 	
-	.phone {
-		width: 100%;
-		background-color: rgb(148,226,218);
+	.carousel img {
+		width: 60%;
 	}
 	
-	.phone img {
-		width: 80%;
-		display: block;
-    margin-left: auto;
-    margin-right: auto 
-}
-}
+	.carousel {
+		padding-bottom: 46%;
+	}
+	
+	
 
 @media only screen and (min-width: 62em) {
-
-		.phone img {
-		width: 50%;
-		}
+	
 		
 		.text p {
 			font-size: 1.5em;
@@ -155,11 +177,7 @@ footer {
 		float: left;
 		overflow: hidden;
 	}
-	
-	.phone img {
-		width: 40%;
-	}
-	
+		
 	nav ol {
 		list-style-type:none;
 		float:right;
@@ -172,6 +190,7 @@ footer {
 		padding-bottom: 1%;
 		font-size: 1em;
 	}
+
 	
 }
 
