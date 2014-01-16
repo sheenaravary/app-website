@@ -53,11 +53,11 @@ nav a:visited {
 .carousel {
   overflow: hidden;
   position: relative;
-  padding-bottom: 80%;
+  padding-bottom: 87%;
 }
 
 .carousel img {
-	padding-top: 4%;
+	padding-top: 9%;
 	margin: auto;
 	padding: auto;
   position: absolute;
@@ -170,7 +170,7 @@ footer {
 	}
 	
 	.carousel {
-		padding-bottom: 46%;
+		padding-bottom: 56%;
 	}
 	
 	
@@ -179,7 +179,7 @@ footer {
 	
 	
 		.carousel {
-			padding-bottom: 51%;
+			padding-bottom: 55.5%;
 		}
 		
 		.text p {
@@ -205,7 +205,7 @@ footer {
 	}
 	
 	.carousel {
-		padding-bottom: 43%;
+		padding-bottom: 48%;
 	}
 	
 	.carousel img {
