@@ -50,45 +50,41 @@ nav a:visited {
 	text-decoration: none;
 }
 
-#carousel {
+.carousel-wrapper {
 	background-color: rgb(148,226,218);
-	width: 100%;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 42.4%;
-	margin: 0 auto;
-	padding-left: 10%
 }
 
-#carousel img {
-  position: absolute;
-  width: 55%;
+.carousel-inside {
+				max-width: 800px;
+				margin: 0 auto;
 }
 
-#slides ul {
-    position:relative;
-    list-style:none;
+.carousel {
+        overflow: hidden;
+        position: relative;
+        padding: 0 0 77.99%;
 }
 
-#slides li {
-    float:left;
+.carousel img {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
 }
 
-#buttons {
-    float:right;
-}
-#buttons a {
-    display:block; 
-    width:31px; 
-    height:32px;
-    text-indent:-999em;
-    float:left;
-    outline:0;
+.carousel-items [data-state="current"] {
+        z-index: 100;
 }
 
-.clear {
-	clear:both
+.carousel-items [data-state="incoming"] {
+        z-index: 101;
 }
+
+.carousel-buttons {
+        position: absolute;
+        z-index: 1000;
+}
+
 	
 .text-video {
 	background-color: rgb(74,207,193);

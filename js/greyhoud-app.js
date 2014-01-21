@@ -1,50 +1,21 @@
-$(document).ready(function() {
-    var speed = 4500;
-    var run = setInterval('rotate()', speed);    
-    
-    var item_width = $('#slides li').outerWidth(); 
-    var left_value = item_width * (-1); 
-        
-    $('#slides li:first').before($('#slides li:last'));
-    
-    $('#slides ul').css({'left' : left_value});
-    $('#prev').click(function() {
-        var left_indent = parseInt($('#slides ul').css('left')) + item_width;
-        $('#slides ul').animate({'left' : left_indent}, 200,function(){    
-            $('#slides li:first').before($('#slides li:last'));           
-            $('#slides ul').css({'left' : left_value});
-        
+var $items = $('.carousel-items img');
+
+var switchSlide = function (outgoing, incoming) {
+        $items.eq(incoming).attr('data-state', 'incoming').fadeIn(250, function () {
+                $items.eq(outgoing).attr('data-state', '').hide();
+                $items.eq(incoming).attr('data-state', 'current');
         });
-        return false;
-            
-    });
-    $('#next').click(function() {
-        
-        var left_indent = parseInt($('#slides ul').css('left')) - item_width;
-        
-        $('#slides ul').animate({'left' : left_indent}, 200, function () {
-            
-            $('#slides li:last').after($('#slides li:first'));                     
-            
-            $('#slides ul').css({'left' : left_value});
-        
-        });
-                 
-        return false;
-        
-    });        
-    
-    $('#slides').hover(
-        
-        function() {
-            clearInterval(run);
-        }, 
-        function() {
-            run = setInterval('rotate()', speed);    
+};
+
+$items.filter(':not([data-state="current"])').hide();
+
+	setInterval(function(){
+        var current = $items.filter('[data-state="current"]').index();
+        var next = current + 1;
+
+        if (next >= $items.length) {
+                next = 0;
         }
-    ); 
-        
-});
-function rotate() {
-    $('#next').click();
-}
+
+        switchSlide(current, next);
+},4300);
