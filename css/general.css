@@ -52,11 +52,10 @@ nav a:visited {
 
 .carousel-wrapper {
 	background-color: rgb(148,226,218);
-	display: block;
 }
 
 .carousel-inside {
-				max-width: 950px;
+				max-width: 870px;
 				margin: 0 auto;
 }
 
