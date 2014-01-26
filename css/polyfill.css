@@ -6,6 +6,7 @@ dialog {
   padding: 1em;
   background: black;
   color: black;
+	margin-top: -30%;
 
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -20,7 +21,7 @@ dialog {
 
 dialog[open] {
   display: block;
-	width: 80%;
+	width: 35%;
 }
 
 .backdrop {
