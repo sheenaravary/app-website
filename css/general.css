@@ -56,7 +56,7 @@ a:hover {
 }
 
 .video a:hover {
-	background-color: rgb(74,207,193);
+	background-color: inherit;
 }
 
 .carousel-wrapper {
