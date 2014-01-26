@@ -50,6 +50,15 @@ nav a:visited {
 	text-decoration: none;
 }
 
+a:hover {
+  background-color: rgb(121,127,125);
+	color: white;
+}
+
+.video a:hover {
+	background-color: rgb(74,207,193);
+}
+
 .carousel-wrapper {
 	background-color: rgb(148,226,218);
 }
@@ -86,36 +95,36 @@ nav a:visited {
 }
 
 dialog {
-  position: absolute;
-  left: 0; right: 0;
-  margin: auto;
-  border: solid;
-  padding: 1em;
-  background: white;
-  color: black;
-
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content;
-
-  height: -moz-fit-content;
-  height: -webkit-fit-content;
-  height: fit-content;
-
-  display: none;
+	border-radius: 6px;
+	border: 1px solid #333;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	padding: 1em;
 }
 
-dialog[open] {
-  display: block;
+dialog::backdrop {
+	background-color: rgba(74,207,193,0.7);
 }
 
-.backdrop {
-  position: fixed;
-  background: rgba(148,226,218,0.5);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+dialog + .backdrop {
+	background-color: rgba(74,207,193,0.7);
+}
+
+.btn-close {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	border: 2px solid #fff;
+	background-color: #000;
+	color: #fff;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	font-weight: bold;
+	line-height: 0.6;
+	font-size: 1rem;
+	cursor: pointer;
+	position: absolute;
+	top: -16px;
+	right: -16px;
 }
 	
 .text-video {
@@ -125,7 +134,8 @@ dialog[open] {
 	
 	
 .video,
-.text {
+.text,
+.btn-open {
 	width: 100%;
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -154,11 +164,6 @@ dialog[open] {
 	color: white;
 	font-weight: 100;
 	text-align: center;
-}
-
-a:hover {
-  background-color: rgb(121,127,125);
-	color: white;
 }
 
 footer {

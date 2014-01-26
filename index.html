@@ -6,7 +6,7 @@
 <meta name="mobileoptimized" content="240">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/general.css" rel="stylesheet">
-<link href="css/normalize.css" rel="stylesheet">
+<link href="css/polyfill.css" rel="stylesheet">
 <title>Greyhound App</title>
 </head>
 <body>
@@ -42,13 +42,14 @@
 			<p>INTRODUCING</p>
 			<p class="border">A new app from Greyhound that makes buying tickets effortless. Perfect for the every day traveller, or the weekend warriors. Start by creating an account with us, and start enjoying new features like; having your tickets texted directly to you, (eliminating the printed ticket) </p>
 		</div>
+		
 		<div class="video">
 		<a class="btn-open" href="#"><img src="img/vimeo-img.png" alt="video demo of greyhound app"></a>
 			<dialog>
-				<div class="videopopup"></div>
+				<div class="video-open"></div>
 					<button class="btn-close">x</button>
-				</dialog>
-		</div>
+				</div>
+			</dialog>
 </div>
 
 <footer>
@@ -57,6 +58,8 @@
 
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="js/greyhoud-app.js"></script>
+<script src="js/poly.js"></script>
+<script src="js/plugins.js"></script>
 
 </body>
 </html>
