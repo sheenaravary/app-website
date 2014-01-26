@@ -11,6 +11,6 @@ $('.btn-close').on('click', function () {
 	.shows() allow user to interact with the stuff behind the dialog
 	.showModal() disables user interaction behind the dialog
 	*/
-	$videoDialog.get(0).close();
+	$videoDialog.get(0).close('');
 	$videoDialog.children('.video').html('');
 });
