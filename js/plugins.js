@@ -2,7 +2,7 @@ var $videoDialog = $('dialog');
 dialogPolyfill.registerDialog($videoDialog.get(0));
 
 $('.btn-open').on('click', function () {
-	$videoDialog.children('.video-open').html('<iframe src="http://player.vimeo.com/video/81434464" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+	$videoDialog.children('.video-open').html('<iframe src="http://player.vimeo.com/video/81434464" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 	$videoDialog.get(0).showModal();
 });
 

@@ -21,7 +21,7 @@ dialog {
 
 dialog[open] {
   display: block;
-	width: 35%;
+	width: 820px;
 }
 
 .backdrop {
