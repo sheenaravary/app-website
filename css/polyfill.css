@@ -7,6 +7,7 @@ dialog {
   background: black;
   color: black;
 	margin-top: -30%;
+	width: 100%;
 
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -21,7 +22,6 @@ dialog {
 
 dialog[open] {
   display: block;
-	width: 820px;
 }
 
 .backdrop {
@@ -31,8 +31,4 @@ dialog[open] {
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-.video-open img {
-	width: 50%;
 }
