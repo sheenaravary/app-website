@@ -219,14 +219,15 @@ dialog + .backdrop {
 	}
 }
 
-.travel {
-	width: 100%;
-	float: left;
+.travel-all {
 	overflow: hidden;
 }
 
 .travel-section {
-	background-color: #9f221b;
+	width: 40%;
+	float: left;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 .travel-wrapper {
@@ -244,15 +245,27 @@ dialog + .backdrop {
 	top: -40px;
 	width: 40px;
 	-webkit-transform-origin: 50% 90px;
-	-webkit-animation: rocket-rotate 6s linear infinite;
+	-webkit-animation: bus-rotate 6s linear infinite;
 }
 
 
 .travel-info {
 	width: 60%;
 	float: right;
-	overflow: hidden;
+	padding-top: 2%;
 	}
+	
+.travel-info p {
+	width: 80%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	color: white;
+	font-weight: 100;
+	text-align: center;
+}
 
 footer {
 	width: 100%;
@@ -269,6 +282,16 @@ footer {
 	clear: all;
 }
 
+@-webkit-keyframes bus-rotate{
+		0% {
+			-webkit-transform: rotate(0deg);
+		}
+		
+		100% {
+			-webkit-transform: rotate(-360deg);
+		}
+}
+
 @media only screen and (min-width: 37em) {
 	
 	#carousel {
@@ -282,7 +305,8 @@ footer {
 			padding-left: 20%;
 		}
 		
-		.text p {
+		.text p,
+		.travel-info p {
 			font-size: 1.5em;
 			line-height: 1em;
 		}
@@ -335,7 +359,7 @@ footer {
 		padding-bottom: 1%;
 		font-size: 1em;
 		width: 100%;
-		background-color: rgb(74,207,193);
+	  background-color: rgb(148,226,218);
 		}
 }
 
