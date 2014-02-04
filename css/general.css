@@ -12,6 +12,8 @@ body {
 
 img {
 	width: 100%;
+	display: block;
+	margin: 0 auto;
 }
 
 header {
@@ -148,7 +150,6 @@ dialog + .backdrop {
 	width: 100%;
 }
 	
-	
 .video,
 .text {
 	width: 100%;
@@ -181,9 +182,46 @@ dialog + .backdrop {
 	text-align: center;
 }
 
+.trips {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.trips li {
+	display: inline-block;
+	width: 30%;
+}
+
+.trips img {
+	opacity: 0;
+	-webkit-transform: translateY(140px);
+}
+
+.js-trips-animate {
+	-webkit-animation: trips-fly 1s ease-out 1 forwards;
+}
+
+@-webkit-keyframes trips-fly {
+	20% {
+		opacity: 0;
+		-webkit-transform: translateY(140px);
+}
+
+	40% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
 footer {
 	width: 100%;
-	background-color: rgb(74,207,193);
+	background-color: rgb(148,226,218);
 	padding: auto;
 	margin: auto;
 	bottom: 0;
@@ -195,7 +233,6 @@ footer {
 	text-align: center;
 	clear: all;
 }
-
 
 @media only screen and (min-width: 37em) {
 	
@@ -252,12 +289,18 @@ footer {
 		background-color: rgb(74,207,193);
 	}
 	
+	.trips-section {
+		width: 100%;
+	background-color: rgb(148,226,218);
+	}
+	
+	
 	footer {
 		padding-top: 1%;
 		padding-bottom: 1%;
 		font-size: 1em;
 		width: 100%;
-		background-color: rgb(148,226,218);
+		background-color: rgb(74,207,193);
 		}
 }
 
