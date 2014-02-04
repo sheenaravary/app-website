@@ -1,3 +1,4 @@
+var $win = $(window);
 var $trips = $('.trips img');
 
 $('.trips-section').waypoints(function () {

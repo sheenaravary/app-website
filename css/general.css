@@ -219,6 +219,41 @@ dialog + .backdrop {
 	}
 }
 
+.travel {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.travel-section {
+	background-color: #9f221b;
+}
+
+.travel-wrapper {
+	position: relative;
+}
+
+.globe {
+	width: 100px;
+}
+
+.bus {
+	left: 50%;
+	margin-left: -20px;
+	position: absolute;
+	top: -40px;
+	width: 40px;
+	-webkit-transform-origin: 50% 90px;
+	-webkit-animation: rocket-rotate 6s linear infinite;
+}
+
+
+.travel-info {
+	width: 60%;
+	float: right;
+	overflow: hidden;
+	}
+
 footer {
 	width: 100%;
 	background-color: rgb(148,226,218);
