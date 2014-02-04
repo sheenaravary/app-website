@@ -234,8 +234,8 @@ dialog + .backdrop {
 .travel-section {
 	width: 40%;
 	float: left;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 
 .travel-wrapper {
