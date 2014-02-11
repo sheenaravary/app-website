@@ -208,13 +208,6 @@ dialog + .backdrop {
 	-webkit-animation: trips-fly 1s ease-out 1 forwards;
 }
 
-.testimonials-wrapper {
-	background-color: red;
-	width: 100%;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	}
-
 @-webkit-keyframes trips-fly {
 	20% {
 		opacity: 0;
@@ -312,6 +305,17 @@ footer {
 		padding-left: 15%;
 	}
 	
+.testimonials-wrapper {
+	background-color: red;
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	}
+	
+.testimonials {
+	width: 50%;
+	margin: 0 auto;
+}
 
 @media only screen and (min-width: 62em) {
 	
