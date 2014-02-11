@@ -208,6 +208,13 @@ dialog + .backdrop {
 	-webkit-animation: trips-fly 1s ease-out 1 forwards;
 }
 
+.testimonials-wrapper {
+	background-color: red;
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	}
+
 @-webkit-keyframes trips-fly {
 	20% {
 		opacity: 0;
